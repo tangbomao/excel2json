@@ -19,7 +19,6 @@ import java.util.*
  */
 class XlsFileReader(private val filePath: String, private val outputDir: String, private val clientHidden: Boolean = false) {
 
-
     companion object {
         private val LOG = Logger(XlsFileReader::class.java)
     }
