@@ -1,0 +1,20 @@
+[
+  {
+    "key": "sp_america",
+    "type": 3,
+    "zh_CN": "新浪美洲",
+    "en": "America"
+  },
+  {
+    "key": "sp_europe",
+    "type": 3,
+    "zh_CN": "新浪欧洲",
+    "en": "Europe"
+  },
+  {
+    "key": "sp_ru",
+    "type": 3,
+    "zh_CN": "俄罗斯",
+    "en": "Russia"
+  }
+]

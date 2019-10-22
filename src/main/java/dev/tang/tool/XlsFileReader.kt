@@ -160,9 +160,11 @@ class XlsFileReader(private val filePath: String, private val outputDir: String,
             "int[]" -> intArrayOf()
             "double[]" -> doubleArrayOf()
             "string[]" -> arrayOf<String>()
+            "boolean[]" -> arrayOf<Boolean>()
             "int" -> 0
             "double" -> 0.0
             "boolean" -> false
+            "string" -> ""
             "empty" -> null
             else -> null
         }
@@ -192,9 +194,11 @@ class XlsFileReader(private val filePath: String, private val outputDir: String,
             "int[]" -> str.split("\\|").map { it.toInt() }
             "double[]" -> str.split("\\|").map { it.toDouble() }
             "string[]" -> str.split("\\|")
+            "boolean[]" -> str.split("\\|").map { it.toBoolean() }
             "int" -> str.toInt()
             "double" -> str.toDouble()
             "boolean" -> str.toBoolean()
+            "string" -> str
             "empty" -> null
             else -> null
         }
